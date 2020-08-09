@@ -33,11 +33,31 @@
     </div>
     <div class="container-3">
           <h2>Challange 3: Rock, Paper, Scissores</h2>
-          <div class="flex-box-rps" id="flex-box-rps-div">hei
+          <div class="flex-box-rps" id="flex-box-rps-div">
               <img id='rock' src="https://www.rock-paper-scissors-game.com/i/rock.png" alt="Rock" height="200" onclick="rpsGame(this)">
               <img id="paper" src="https://www.rock-paper-scissors-game.com/i/paper.png" alt="Paper" height="200" onclick="rpsGame(this)" >
               <img id="scissors" src="https://www.rock-paper-scissors-game.com/i/scissors.png" alt="Scissores" height="200" onclick="rpsGame(this)" >
           </div>
+    </div>
+    <div class="container-4">
+        <h2 id='change-ny-color'>Challange 4: Change the Color of All Button</h2>
+        <div class="flex-box-pick-color">
+            <form action="">
+                
+                <select name="backdrop" id="background" onchange="buttonColorChange(this)">
+                    <option value="random">Random</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="reset">Reset</option>
+                </select>                
+            </form>
+            <button class="btn btn-primary">Weel!</button>
+            <button class="btn btn-danger">Yahoo!</button>
+            <button class="btn btn-warning">Google </button>
+            <button class="btn btn-success">Facbook!</button>
+
+
+        </div>
     </div>
     <script src="static/js/script.js"></script>
 </body>

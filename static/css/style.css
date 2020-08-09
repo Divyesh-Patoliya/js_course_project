@@ -1,13 +1,12 @@
-.container-1,.container-2,.container-3{
+.container-1,.container-2,.container-3,.container-4{
     border: 1px solid black;
     margin: 0 auto;
-    font-size: 0;
     text-align: center;
     width: 75%;
 }
-.flex-box-container-1, .flex-box-container-2,.flex-box-rps{
+.flex-box-container-1, .flex-box-container-2,.flex-box-rps,.flex-box-pick-color{
     display: flex;
-    border-top: 1px solid black;;
+    border-top: 1px solid black;
     border-bottom:  1px solid black;
     padding: 10px;
     flex-wrap: wrap;
