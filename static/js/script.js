@@ -85,9 +85,10 @@ function rpsFrontEnd(humanChoice,botChoice,messageForPrint) {
     var botDiv = document.createElement('div');
     var messageDiv = document.createElement('div');
 
-    humanDiv.innerHTML = "<img src='" + imagesData[''+humanChoice] + "' height=200 style=' margin: 10px; border-radius: 5%; box-shadow: 0px 10px 50px rgba(37,50,233,1);'>"
-    messageDiv.innerHTML = "<h1 style='color:"+ messageForPrint['color']+"; font-size: 60px;'>"+ messageForPrint['message']+"</h1>"
-    botDiv.innerHTML = "<img src='" +imagesData[''+botChoice] + "' height=200 style=' margin: 10px; border-radius: 5%; box-shadow: 0px 10px 50px rgba(243,38,24,1);'>"
+    humanDiv.innerHTML = "<img src='" + imagesData[''+humanChoice] + "' height=200 style=' margin: 10px; border-radius: 5%;filter: drop-shadow(0.35rem 0.35rem 0.4rem  rgba(0, 0 ,0 ,0.5) );'>"
+    
+    messageDiv.innerHTML = "<h1 style='color:"+ messageForPrint['color']+"; font-size: 60px;filter: drop-shadow(0.35rem 0.35rem 0.4rem  rgba(0, 0 ,0 ,0.5) );'>"+ messageForPrint['message']+"</h1>"
+    botDiv.innerHTML = "<img src='" +imagesData[''+botChoice] + "' height=200 style=' margin: 10px; border-radius: 5%;     filter: drop-shadow(0.35rem 0.35rem 0.4rem  rgba(0, 0 ,0 ,0.5) );'>"
 
     document.getElementById('flex-box-rps-div').appendChild(humanDiv);
     document.getElementById('flex-box-rps-div').appendChild(messageDiv);
